@@ -1,22 +1,19 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { Text, View } from "react-native";
+import Sudoku from "./app/sudoku";
+import StickerSmash from "./app/StickerSmash";
 
 export default function App() {
   return (
-    <View className="flex-1 bg-sky-700 items-center justify-center">
-      <Text className="text-white">
-        Open up App.js to start working on your app!
-      </Text>
+    <View
+      style={{
+        flex: 1,
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <StickerSmash />
       <StatusBar style="auto" />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
