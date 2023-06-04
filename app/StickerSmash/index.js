@@ -10,6 +10,7 @@ import { useState } from "react";
 import EmojiPicker from "./components/EmojiPicker";
 import EmojiList from "./components/EmojiList";
 import EmojiSticker from "./components/EmojiSticker";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 export default function StickerSmash() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -48,7 +49,7 @@ export default function StickerSmash() {
   };
 
   return (
-    <View
+    <GestureHandlerRootView
       style={{
         flex: 1,
         alignItems: "center",
@@ -100,6 +101,6 @@ export default function StickerSmash() {
       <EmojiPicker isVisible={isModalVisible} onClose={onModalClose}>
         <EmojiList onSelect={setPickedEmoji} onCloseModal={onModalClose} />
       </EmojiPicker>
-    </View>
+    </GestureHandlerRootView>
   );
 }
