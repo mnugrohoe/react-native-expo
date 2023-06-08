@@ -1,5 +1,5 @@
 import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import Sudoku from "./app/sudoku";
 import StickerSmash from "./app/StickerSmash";
 
@@ -12,7 +12,7 @@ export default function App() {
         justifyContent: "center",
       }}
     >
-      <StickerSmash />
+      <Sudoku />
       <StatusBar style="auto" />
     </View>
   );
